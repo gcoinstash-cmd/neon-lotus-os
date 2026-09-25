@@ -6,7 +6,7 @@
   "description": "Neon Lotus OS - Modern Downtown Chinese Bistro & Speakeasy Operating System",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && cp dist/index.html dist/admin.html && mkdir -p dist/admin && cp dist/index.html dist/admin/index.html && cp dist/index.html dist/200.html && cp dist/index.html dist/404.html",
     "preview": "vite preview",
     "clean": "rm -rf dist",
     "lint": "tsc --noEmit"
